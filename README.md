@@ -7,10 +7,19 @@ A key feature of Brew is its ability to set up your Mac to a known configuration
 
 ## Install Prerequisites
 
+### Fake Xcode Installation
+
 ```
 touch /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress;
 softwareupdate -i -a
 rm /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
+```
+
+
+### Install Rossetta 2
+
+```
+softwareupdate --install-rosetta --agree-to-license
 ```
 
 ## Install Brew
@@ -23,9 +32,9 @@ Compete details are at [Brew](https://brew.sh) but fairly simple to install. Ope
 ```
 
 
-## Basic Brew Bundle
+## Brew Bundle Install
 
-The most basic command
+Now you can install your bundle, run the below command and take a coffee as this may take a bit of time. 
 
 ```
 brew bundle install
